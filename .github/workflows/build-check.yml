@@ -1,8 +1,8 @@
 name: build
-run-name: ProbABEL build
+run-name: ProbABEL build and tests
 on: [push]
 jobs:
-  build:
+  build_and_test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -10,3 +10,4 @@ jobs:
       - run: autoreconf -i
       - run: ./configure
       - run: make
+      - run: make check
