@@ -1,6 +1,6 @@
 name: build
 run-name: ProbABEL build and tests
-on: [push]
+on: [push, pull_request]
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
@@ -8,6 +8,6 @@ jobs:
       - uses: actions/checkout@v4
       - run: sudo apt install -y build-essential
       - run: autoreconf -i
-      - run: ./configure
+      - run: ./configure --enable-dev-options --disable-silent-rules
       - run: make
       - run: make check
