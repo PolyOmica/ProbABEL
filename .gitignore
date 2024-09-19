@@ -1,26 +1,47 @@
+/**/*.log
+/**/Makefile
+/**/Makefile.in
+/**/.btmp
 
 # /
 /.project
 /autom4te.cache
 /aclocal.m4
-/Makefile.in
+/config.status
 /configure
+/.Rhistory
 
 # /checks/
-/checks/Makefile
-/checks/Makefile.in
-
-# /checks/R-tests/
-/checks/R-tests/Makefile.in
+/checks/**/*.trs
+/checks/**/*.out.txt
+/checks/probabel_config.cfg
+/checks/*.dose
+/checks/*.prob
+/checks/*.mldose
+/checks/*.map
+/checks/*.info
+/checks/height.PHE
+/checks/probabel
 
 # /doc/
-/doc/Makefile.in
 /doc/doxygen-docs
+/doc/ProbABEL_manual.idx
+/doc/ProbABEL_manual.ilg
+/doc/ProbABEL_manual.ind
+/doc/ProbABEL_manual.log
+/doc/ProbABEL_manual.out
+/doc/ProbABEL_manual.pdf
+/doc/ProbABEL_manual.toc
 
-# /examples/
-/examples/Makefile.in
 
 # /src/
-/src/Makefile.in
+/src/pacoxph
+/src/palinear
+/src/palogist
+/src/stamp-h1
 /src/config.h.in
-.Rhistory
+/src/config.h
+/src/**/*.o
+/src/.deps/
+/src/fvlib/.deps/
+/src/fvlib/.dirstamp
